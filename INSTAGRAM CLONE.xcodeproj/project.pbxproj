@@ -12,6 +12,8 @@
 		9FF796552CEC6F110041EC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF796542CEC6F110041EC78 /* Assets.xcassets */; };
 		9FF796582CEC6F110041EC78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF796572CEC6F110041EC78 /* Preview Assets.xcassets */; };
 		9FF796612CEC73DF0041EC78 /* AppLaunchScreeen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF796602CEC73DF0041EC78 /* AppLaunchScreeen.storyboard */; };
+		9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796642CEC79E00041EC78 /* FeedView.swift */; };
+		9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796662CEC7B4A0041EC78 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9FF796542CEC6F110041EC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF796572CEC6F110041EC78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FF796602CEC73DF0041EC78 /* AppLaunchScreeen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppLaunchScreeen.storyboard; sourceTree = "<group>"; };
+		9FF796642CEC79E00041EC78 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		9FF796662CEC7B4A0041EC78 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		9FF796622CEC776F0041EC78 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				9FF796662CEC7B4A0041EC78 /* PostView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF796522CEC6F0B0041EC78 /* ContentView.swift */,
+				9FF796642CEC79E00041EC78 /* FeedView.swift */,
 				9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */,
 			);
 			path = Screens;
@@ -174,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */,
+				9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */,
+				9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */,
 				9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
