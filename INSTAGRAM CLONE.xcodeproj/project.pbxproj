@@ -55,8 +55,6 @@
 			children = (
 				9FF7965E2CEC72500041EC78 /* Model */,
 				9FF7965F2CEC725B0041EC78 /* Views */,
-				9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */,
-				9FF796522CEC6F0B0041EC78 /* ContentView.swift */,
 				9FF796542CEC6F110041EC78 /* Assets.xcassets */,
 				9FF796562CEC6F110041EC78 /* Preview Content */,
 				9FF796602CEC73DF0041EC78 /* AppLaunchScreeen.storyboard */,
@@ -82,8 +80,26 @@
 		9FF7965F2CEC725B0041EC78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9FF796622CEC776F0041EC78 /* SubView */,
+				9FF796632CEC777E0041EC78 /* Screens */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9FF796622CEC776F0041EC78 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		9FF796632CEC777E0041EC78 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9FF796522CEC6F0B0041EC78 /* ContentView.swift */,
+				9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
