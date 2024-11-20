@@ -20,6 +20,8 @@
 		9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796702CEDBFEE0041EC78 /* CommentView.swift */; };
 		9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796722CEDC3DE0041EC78 /* MessageView.swift */; };
 		9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796742CEDC5F90041EC78 /* CommentModel.swift */; };
+		9FF796772CEE2C810041EC78 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796762CEE2C810041EC78 /* BrowseView.swift */; };
+		9FF796792CEE2DC80041EC78 /* CarouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796782CEE2DC80041EC78 /* CarouseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		9FF796702CEDBFEE0041EC78 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		9FF796722CEDC3DE0041EC78 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		9FF796742CEDC5F90041EC78 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		9FF796762CEE2C810041EC78 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		9FF796782CEE2DC80041EC78 /* CarouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			children = (
 				9FF796722CEDC3DE0041EC78 /* MessageView.swift */,
 				9FF796662CEC7B4A0041EC78 /* PostView.swift */,
+				9FF796782CEE2DC80041EC78 /* CarouseView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				9FF796642CEC79E00041EC78 /* FeedView.swift */,
 				9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */,
 				9FF796702CEDBFEE0041EC78 /* CommentView.swift */,
+				9FF796762CEE2C810041EC78 /* BrowseView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -206,12 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF7966E2CEDBC710041EC78 /* PostArrayModel.swift in Sources */,
+				9FF796792CEE2DC80041EC78 /* CarouseView.swift in Sources */,
 				9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */,
 				9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */,
 				9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */,
 				9FF7966C2CEC81CC0041EC78 /* PostModel.swift in Sources */,
 				9FF7966A2CEC809C0041EC78 /* MyTheme.swift in Sources */,
 				9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */,
+				9FF796772CEE2C810041EC78 /* BrowseView.swift in Sources */,
 				9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */,
 				9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */,
 				9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */,
