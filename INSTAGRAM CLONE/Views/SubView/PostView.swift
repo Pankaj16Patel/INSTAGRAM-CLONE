@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PostView: View {
+    
+    @State var post: PostModel
+    
     var body: some View {
         VStack(alignment: .center,spacing:0){
             //MARK: HEADER
@@ -18,7 +21,7 @@ struct PostView: View {
                     .frame(width: 30,height: 30)
                     .cornerRadius(15)
                 
-                Text("user name here")
+                Text(post.userName)
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(.gray)
@@ -38,20 +41,31 @@ struct PostView: View {
             HStack(alignment: .center, spacing: 10){
                 Image(systemName: "heart")
                     .font(.title3)
-                Image(systemName: "bubble.middle.bottom")
-                    .font(.title3)
+                
+                //MARK: COMMENT NAVIGATION
+                NavigationLink {
+                    CommentView()
+                } label: {
+                    Image(systemName: "bubble.middle.bottom")
+                        .font(.title3)
+                        .foregroundColor(.gray)
+                }
+
+               
                 Image(systemName: "paperplane")
                     .font(.title3)
                 Spacer()
             }
             .padding(.all ,6)
             .foregroundColor(.gray)
-           
-            HStack{
-                Text("this is the cation for the photo")
-                    .foregroundColor(.gray)
-                Spacer()
-            }.padding(.all, 6)
+            if let caption = post.caption{
+                HStack{
+                    Text(caption)
+                        .foregroundColor(.gray)
+                    Spacer()
+                }.padding(.all, 6)
+            }
+            
            
             
         }
@@ -59,7 +73,10 @@ struct PostView: View {
 }
 
 struct PostView_Previews: PreviewProvider {
+    
+    static var post: PostModel = PostModel(postId: "", userId: "", userName: "Entertainment", caption: "i am beautiful" ,dateCreated: Date(), likeCount: 0, likedByUser: false)
+    
     static var previews: some View {
-        PostView()
+        PostView(post: post)
     }
 }

@@ -14,6 +14,12 @@
 		9FF796612CEC73DF0041EC78 /* AppLaunchScreeen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF796602CEC73DF0041EC78 /* AppLaunchScreeen.storyboard */; };
 		9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796642CEC79E00041EC78 /* FeedView.swift */; };
 		9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796662CEC7B4A0041EC78 /* PostView.swift */; };
+		9FF7966A2CEC809C0041EC78 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796692CEC809C0041EC78 /* MyTheme.swift */; };
+		9FF7966C2CEC81CC0041EC78 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7966B2CEC81CC0041EC78 /* PostModel.swift */; };
+		9FF7966E2CEDBC710041EC78 /* PostArrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7966D2CEDBC700041EC78 /* PostArrayModel.swift */; };
+		9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796702CEDBFEE0041EC78 /* CommentView.swift */; };
+		9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796722CEDC3DE0041EC78 /* MessageView.swift */; };
+		9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796742CEDC5F90041EC78 /* CommentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		9FF796602CEC73DF0041EC78 /* AppLaunchScreeen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppLaunchScreeen.storyboard; sourceTree = "<group>"; };
 		9FF796642CEC79E00041EC78 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9FF796662CEC7B4A0041EC78 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9FF796692CEC809C0041EC78 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTheme.swift; sourceTree = "<group>"; };
+		9FF7966B2CEC81CC0041EC78 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		9FF7966D2CEDBC700041EC78 /* PostArrayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayModel.swift; sourceTree = "<group>"; };
+		9FF796702CEDBFEE0041EC78 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		9FF796722CEDC3DE0041EC78 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		9FF796742CEDC5F90041EC78 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 		9FF7964F2CEC6F0B0041EC78 /* INSTAGRAM CLONE */ = {
 			isa = PBXGroup;
 			children = (
+				9FF796682CEC807E0041EC78 /* Helper */,
 				9FF7965E2CEC72500041EC78 /* Model */,
 				9FF7965F2CEC725B0041EC78 /* Views */,
 				9FF796542CEC6F110041EC78 /* Assets.xcassets */,
@@ -77,6 +90,9 @@
 		9FF7965E2CEC72500041EC78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9FF7966B2CEC81CC0041EC78 /* PostModel.swift */,
+				9FF7966D2CEDBC700041EC78 /* PostArrayModel.swift */,
+				9FF796742CEDC5F90041EC78 /* CommentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +109,7 @@
 		9FF796622CEC776F0041EC78 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				9FF796722CEDC3DE0041EC78 /* MessageView.swift */,
 				9FF796662CEC7B4A0041EC78 /* PostView.swift */,
 			);
 			path = SubView;
@@ -104,8 +121,17 @@
 				9FF796522CEC6F0B0041EC78 /* ContentView.swift */,
 				9FF796642CEC79E00041EC78 /* FeedView.swift */,
 				9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */,
+				9FF796702CEDBFEE0041EC78 /* CommentView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9FF796682CEC807E0041EC78 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9FF796692CEC809C0041EC78 /* MyTheme.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF7966E2CEDBC710041EC78 /* PostArrayModel.swift in Sources */,
 				9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */,
+				9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */,
+				9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */,
+				9FF7966C2CEC81CC0041EC78 /* PostModel.swift in Sources */,
+				9FF7966A2CEC809C0041EC78 /* MyTheme.swift in Sources */,
 				9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */,
+				9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */,
 				9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */,
 				9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */,
 			);
