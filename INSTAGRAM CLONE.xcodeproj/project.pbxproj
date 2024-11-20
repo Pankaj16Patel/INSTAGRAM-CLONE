@@ -22,6 +22,9 @@
 		9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796742CEDC5F90041EC78 /* CommentModel.swift */; };
 		9FF796772CEE2C810041EC78 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796762CEE2C810041EC78 /* BrowseView.swift */; };
 		9FF796792CEE2DC80041EC78 /* CarouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796782CEE2DC80041EC78 /* CarouseView.swift */; };
+		9FF7967B2CEE81BA0041EC78 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7967A2CEE81BA0041EC78 /* ImageGridView.swift */; };
+		9FF7967D2CEE957E0041EC78 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7967C2CEE957E0041EC78 /* UploadView.swift */; };
+		9FF7967F2CEE98F80041EC78 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7967E2CEE98F80041EC78 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,10 @@
 		9FF796742CEDC5F90041EC78 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		9FF796762CEE2C810041EC78 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		9FF796782CEE2DC80041EC78 /* CarouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouseView.swift; sourceTree = "<group>"; };
+		9FF7967A2CEE81BA0041EC78 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		9FF7967C2CEE957E0041EC78 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		9FF7967E2CEE98F80041EC78 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9FF796802CEE9D5F0041EC78 /* INSTAGRAM-CLONE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "INSTAGRAM-CLONE-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 		9FF7964F2CEC6F0B0041EC78 /* INSTAGRAM CLONE */ = {
 			isa = PBXGroup;
 			children = (
+				9FF796802CEE9D5F0041EC78 /* INSTAGRAM-CLONE-Info.plist */,
 				9FF796682CEC807E0041EC78 /* Helper */,
 				9FF7965E2CEC72500041EC78 /* Model */,
 				9FF7965F2CEC725B0041EC78 /* Views */,
@@ -116,6 +124,8 @@
 				9FF796722CEDC3DE0041EC78 /* MessageView.swift */,
 				9FF796662CEC7B4A0041EC78 /* PostView.swift */,
 				9FF796782CEE2DC80041EC78 /* CarouseView.swift */,
+				9FF7967A2CEE81BA0041EC78 /* ImageGridView.swift */,
+				9FF7967E2CEE98F80041EC78 /* ImagePicker.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 				9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */,
 				9FF796702CEDBFEE0041EC78 /* CommentView.swift */,
 				9FF796762CEE2C810041EC78 /* BrowseView.swift */,
+				9FF7967C2CEE957E0041EC78 /* UploadView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -217,10 +228,13 @@
 				9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */,
 				9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */,
 				9FF7966C2CEC81CC0041EC78 /* PostModel.swift in Sources */,
+				9FF7967B2CEE81BA0041EC78 /* ImageGridView.swift in Sources */,
 				9FF7966A2CEC809C0041EC78 /* MyTheme.swift in Sources */,
 				9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */,
 				9FF796772CEE2C810041EC78 /* BrowseView.swift in Sources */,
 				9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */,
+				9FF7967D2CEE957E0041EC78 /* UploadView.swift in Sources */,
+				9FF7967F2CEE98F80041EC78 /* ImagePicker.swift in Sources */,
 				9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */,
 				9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */,
 			);
@@ -353,6 +367,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"INSTAGRAM CLONE/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "INSTAGRAM-CLONE-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "this app require user permisson to access camera to take photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -381,6 +397,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"INSTAGRAM CLONE/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "INSTAGRAM-CLONE-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "this app require user permisson to access camera to take photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

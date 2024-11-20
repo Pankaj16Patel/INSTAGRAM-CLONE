@@ -10,27 +10,31 @@ import SwiftUI
 struct PostView: View {
     
     @State var post: PostModel
+    var showHeaderAndFooter: Bool
     
     var body: some View {
         VStack(alignment: .center,spacing:0){
             //MARK: HEADER
-            HStack{
-                Image("dog1")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 30,height: 30)
-                    .cornerRadius(15)
-                
-                Text(post.userName)
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(.gray)
-                
-                Spacer()
-                
-                Image(systemName: "ellipsis")
-                    .foregroundColor(.gray)
-            }.padding(.all , 6)
+            if showHeaderAndFooter == true {
+                HStack{
+                    Image("dog1")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30,height: 30)
+                        .cornerRadius(15)
+                    
+                    Text(post.userName)
+                        .font(.callout)
+                        .fontWeight(.medium)
+                        .foregroundColor(.gray)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "ellipsis")
+                        .foregroundColor(.gray)
+                }.padding(.all , 6)
+            }
+         
           
             //MARK: IMAGE
             Image("dog1")
@@ -38,33 +42,36 @@ struct PostView: View {
                 .scaledToFit()
             
             //MARK: FOOTER
-            HStack(alignment: .center, spacing: 10){
-                Image(systemName: "heart")
-                    .font(.title3)
-                
-                //MARK: COMMENT NAVIGATION
-                NavigationLink {
-                    CommentView()
-                } label: {
-                    Image(systemName: "bubble.middle.bottom")
+            if showHeaderAndFooter == true{
+                HStack(alignment: .center, spacing: 10){
+                    Image(systemName: "heart")
                         .font(.title3)
-                        .foregroundColor(.gray)
-                }
+                    
+                    //MARK: COMMENT NAVIGATION
+                    NavigationLink {
+                        CommentView()
+                    } label: {
+                        Image(systemName: "bubble.middle.bottom")
+                            .font(.title3)
+                            .foregroundColor(.gray)
+                    }
 
-               
-                Image(systemName: "paperplane")
-                    .font(.title3)
-                Spacer()
-            }
-            .padding(.all ,6)
-            .foregroundColor(.gray)
-            if let caption = post.caption{
-                HStack{
-                    Text(caption)
-                        .foregroundColor(.gray)
+                   
+                    Image(systemName: "paperplane")
+                        .font(.title3)
                     Spacer()
-                }.padding(.all, 6)
+                }
+                .padding(.all ,6)
+                .foregroundColor(.gray)
+                if let caption = post.caption{
+                    HStack{
+                        Text(caption)
+                            .foregroundColor(.gray)
+                        Spacer()
+                    }.padding(.all, 6)
+                }
             }
+           
             
            
             
@@ -77,6 +84,6 @@ struct PostView_Previews: PreviewProvider {
     static var post: PostModel = PostModel(postId: "", userId: "", userName: "Entertainment", caption: "i am beautiful" ,dateCreated: Date(), likeCount: 0, likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post)
+        PostView(post: post, showHeaderAndFooter: true)
     }
 }
