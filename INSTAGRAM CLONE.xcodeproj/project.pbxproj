@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F271E432CF667D300DDF022 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E422CF667D300DDF022 /* ProfileView.swift */; };
+		9F271E452CF669F400DDF022 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E442CF669F400DDF022 /* ProfileHeaderView.swift */; };
+		9F271E472CF6E17B00DDF022 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E462CF6E17B00DDF022 /* SettingView.swift */; };
+		9F271E492CF6E3DF00DDF022 /* SettingLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E482CF6E3DF00DDF022 /* SettingLabelView.swift */; };
+		9F271E4B2CF6E8D700DDF022 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E4A2CF6E8D700DDF022 /* SettingRowView.swift */; };
+		9F271E4D2CF6F43900DDF022 /* SettingEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E4C2CF6F43900DDF022 /* SettingEditTextView.swift */; };
 		9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */; };
 		9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796522CEC6F0B0041EC78 /* ContentView.swift */; };
 		9FF796552CEC6F110041EC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF796542CEC6F110041EC78 /* Assets.xcassets */; };
@@ -28,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F271E422CF667D300DDF022 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9F271E442CF669F400DDF022 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		9F271E462CF6E17B00DDF022 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		9F271E482CF6E3DF00DDF022 /* SettingLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingLabelView.swift; sourceTree = "<group>"; };
+		9F271E4A2CF6E8D700DDF022 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		9F271E4C2CF6F43900DDF022 /* SettingEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEditTextView.swift; sourceTree = "<group>"; };
 		9FF7964D2CEC6F0B0041EC78 /* INSTAGRAM CLONE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "INSTAGRAM CLONE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSTAGRAM_CLONEApp.swift; sourceTree = "<group>"; };
 		9FF796522CEC6F0B0041EC78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +138,9 @@
 				9FF796782CEE2DC80041EC78 /* CarouseView.swift */,
 				9FF7967A2CEE81BA0041EC78 /* ImageGridView.swift */,
 				9FF7967E2CEE98F80041EC78 /* ImagePicker.swift */,
+				9F271E442CF669F400DDF022 /* ProfileHeaderView.swift */,
+				9F271E482CF6E3DF00DDF022 /* SettingLabelView.swift */,
+				9F271E4A2CF6E8D700DDF022 /* SettingRowView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -139,6 +154,9 @@
 				9FF796702CEDBFEE0041EC78 /* CommentView.swift */,
 				9FF796762CEE2C810041EC78 /* BrowseView.swift */,
 				9FF7967C2CEE957E0041EC78 /* UploadView.swift */,
+				9F271E422CF667D300DDF022 /* ProfileView.swift */,
+				9F271E462CF6E17B00DDF022 /* SettingView.swift */,
+				9F271E4C2CF6F43900DDF022 /* SettingEditTextView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -225,11 +243,17 @@
 				9FF7966E2CEDBC710041EC78 /* PostArrayModel.swift in Sources */,
 				9FF796792CEE2DC80041EC78 /* CarouseView.swift in Sources */,
 				9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */,
+				9F271E472CF6E17B00DDF022 /* SettingView.swift in Sources */,
+				9F271E4B2CF6E8D700DDF022 /* SettingRowView.swift in Sources */,
+				9F271E492CF6E3DF00DDF022 /* SettingLabelView.swift in Sources */,
+				9F271E4D2CF6F43900DDF022 /* SettingEditTextView.swift in Sources */,
 				9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */,
+				9F271E452CF669F400DDF022 /* ProfileHeaderView.swift in Sources */,
 				9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */,
 				9FF7966C2CEC81CC0041EC78 /* PostModel.swift in Sources */,
 				9FF7967B2CEE81BA0041EC78 /* ImageGridView.swift in Sources */,
 				9FF7966A2CEC809C0041EC78 /* MyTheme.swift in Sources */,
+				9F271E432CF667D300DDF022 /* ProfileView.swift in Sources */,
 				9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */,
 				9FF796772CEE2C810041EC78 /* BrowseView.swift in Sources */,
 				9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */,

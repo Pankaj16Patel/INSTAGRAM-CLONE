@@ -17,16 +17,27 @@ struct PostView: View {
             //MARK: HEADER
             if showHeaderAndFooter == true {
                 HStack{
-                    Image("dog1")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 30,height: 30)
-                        .cornerRadius(15)
+                    NavigationLink {
+                        ProfileView(profileDisplayName: post.userName, profileUserId: post.userId, isMyProfile: false, showSetting:false)
+                    } label: {
+                        Image("dog1")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 30,height: 30)
+                            .cornerRadius(15)
+                    }
+
+                    NavigationLink {
+                        ProfileView(profileDisplayName: post.userName, profileUserId: post.userId, isMyProfile: false, showSetting: false)
+                    } label: {
+                        
+                        Text(post.userName)
+                            .font(.callout)
+                            .fontWeight(.medium)
+                            .foregroundColor(.gray)
+                    }
+
                     
-                    Text(post.userName)
-                        .font(.callout)
-                        .fontWeight(.medium)
-                        .foregroundColor(.gray)
                     
                     Spacer()
                     
