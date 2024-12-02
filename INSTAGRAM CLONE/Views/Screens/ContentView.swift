@@ -12,35 +12,43 @@ struct ContentView: View {
         TabView {
             NavigationView{
                 FeedView(title: "Feeds", posts: PostArrayObject())
-                    
+                
             }.tabItem {
                 Image(systemName: "book.fill")
                 Text("FEEDS")
-           
-                }
+                
+            }
             NavigationView{
                 BrowseView()
             }
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("BROWSE")
-                }
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("BROWSE")
+            }
             NavigationView{
                 UploadView()
             }
-                .tabItem {
-                    Image(systemName: "square.and.arrow.up.fill")
-                    Text("UPLOAD")
-                }
-            NavigationView{
-                ProfileView(profileDisplayName: "user name", profileUserId: "", isMyProfile: true, showSetting: true)
+            .tabItem {
+                Image(systemName: "square.and.arrow.up.fill")
+                Text("UPLOAD")
             }
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("PROFILE")
-                }
+            NavigationView{
+                ProfileView(profileDisplayName: "user name", profileUserId: "", isMyProfile: true, showSetting: false)
+            }
+            .tabItem {
+                Image(systemName: "person.fill")
+                Text("PROFILE")
+            }
         }
+        .tint(Color.MyTheme.purpleColor)
+        .onAppear{
+            UITabBar.appearance().backgroundColor = .white
+        
+            
+        }
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

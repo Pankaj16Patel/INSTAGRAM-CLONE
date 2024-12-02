@@ -36,10 +36,25 @@ struct SettingView: View {
                         SettingRowView(leftIcon: "pencil", text: "Display Name", color: Color.MyTheme.purpleColor)
                     }
 
+                    NavigationLink {
+                        SettingEditTextView(title: "Profile Bio", discription: "Your bio is freat place to tell people about yourself. it will be shown on your profile only", placeholder: "enter bio here")
+                    } label: {
+                        SettingRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpleColor)
+                    }
+
+                    NavigationLink {
+                        SettingEditImageView(selectedImage: UIImage(named: "dog1")!, title: "PROFILE PICTURTE", discription: "You can edit your profile picture here or choose from image picker", placeholder: "")
+                    } label: {
+                        SettingRowView(leftIcon: "photo", text: "Display Image", color: Color.MyTheme.purpleColor)
+                    }
+
+                       
+                  
+                        SettingRowView(leftIcon: "figure.walk", text: "Sign Out", color: Color.MyTheme.purpleColor)
+                    
+
                    
-                    SettingRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpleColor)
-                    SettingRowView(leftIcon: "photo", text: "Display Image", color: Color.MyTheme.purpleColor)
-                    SettingRowView(leftIcon: "figure.walk", text: "Sign Out", color: Color.MyTheme.purpleColor)
+                    
                    
                 } label: {
                     SettingLabelView(labelText: "DogGram", labelimage: "dot.radiowaves.left.and.right")
@@ -47,9 +62,28 @@ struct SettingView: View {
                 
                 GroupBox {
                     Divider()
-                    SettingRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
-                    SettingRowView(leftIcon: "folder.fill", text: "Terms & condition", color: Color.MyTheme.yellowColor)
-                    SettingRowView(leftIcon: "globe", text: "dogGram's website", color: Color.MyTheme.yellowColor)
+                    Button {
+                        openCustomUrl(urlString: "https://www.google.com")
+                    } label: {
+                        SettingRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
+                    }
+                    
+                    Button {
+                        openCustomUrl(urlString: "https://www.yahoo.com")
+                    } label: {
+                        SettingRowView(leftIcon: "folder.fill", text: "Terms & condition", color: Color.MyTheme.yellowColor)
+                    }
+                    
+                    Button {
+                        openCustomUrl(urlString: "https://www.google.com")
+                    } label: {
+                        SettingRowView(leftIcon: "globe", text: "dogGram's website", color: Color.MyTheme.yellowColor)
+                    }
+
+
+                   
+                 
+                    
                    
                 } label: {
                     SettingLabelView(labelText: "Application", labelimage: "apps.iphone")
@@ -75,6 +109,13 @@ struct SettingView: View {
                 Image(systemName: "xmark")
                     .font(.title3)
             })).accentColor(.gray)
+        }
+    }
+    
+    func openCustomUrl(urlString: String){
+        guard let url = URL(string: urlString) else {return}
+        if UIApplication.shared.canOpenURL(url){
+            UIApplication.shared.open(url)
         }
     }
 }
