@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var currentUserId:String? = nil
     var body: some View {
         TabView {
             NavigationView{
@@ -32,9 +34,17 @@ struct ContentView: View {
                 Image(systemName: "square.and.arrow.up.fill")
                 Text("UPLOAD")
             }
-            NavigationView{
-                ProfileView(profileDisplayName: "user name", profileUserId: "", isMyProfile: true, showSetting: false)
+            ZStack{
+                NavigationView{
+                    if currentUserId != nil{
+                        ProfileView(profileDisplayName: "user name", profileUserId: "", isMyProfile: true, showSetting: false)
+                    }else{
+                        SignUpView()
+                    }
+                    
+                }
             }
+            
             .tabItem {
                 Image(systemName: "person.fill")
                 Text("PROFILE")

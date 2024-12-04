@@ -14,6 +14,11 @@
 		9F271E4B2CF6E8D700DDF022 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E4A2CF6E8D700DDF022 /* SettingRowView.swift */; };
 		9F271E4D2CF6F43900DDF022 /* SettingEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F271E4C2CF6F43900DDF022 /* SettingEditTextView.swift */; };
 		9F9227252CF8388C00DA2F80 /* SettingEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9227242CF8388C00DA2F80 /* SettingEditImageView.swift */; };
+		9F9227272CFD8E1200DA2F80 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9227262CFD8E1200DA2F80 /* SignUpView.swift */; };
+		9F9227292CFDAC3E00DA2F80 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9227282CFDAC3E00DA2F80 /* OnboardingView.swift */; };
+		9F92272D2CFDB0FC00DA2F80 /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92272C2CFDB0FC00DA2F80 /* SignInWithAppleButtonCustom.swift */; };
+		9F92272F2CFE06B000DA2F80 /* OnboardingScreenPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92272E2CFE06B000DA2F80 /* OnboardingScreenPart2.swift */; };
+		9F9227312CFEE44F00DA2F80 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9227302CFEE44F00DA2F80 /* LikeAnimationView.swift */; };
 		9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */; };
 		9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF796522CEC6F0B0041EC78 /* ContentView.swift */; };
 		9FF796552CEC6F110041EC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF796542CEC6F110041EC78 /* Assets.xcassets */; };
@@ -42,6 +47,11 @@
 		9F271E4A2CF6E8D700DDF022 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
 		9F271E4C2CF6F43900DDF022 /* SettingEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEditTextView.swift; sourceTree = "<group>"; };
 		9F9227242CF8388C00DA2F80 /* SettingEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEditImageView.swift; sourceTree = "<group>"; };
+		9F9227262CFD8E1200DA2F80 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		9F9227282CFDAC3E00DA2F80 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9F92272C2CFDB0FC00DA2F80 /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
+		9F92272E2CFE06B000DA2F80 /* OnboardingScreenPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenPart2.swift; sourceTree = "<group>"; };
+		9F9227302CFEE44F00DA2F80 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		9FF7964D2CEC6F0B0041EC78 /* INSTAGRAM CLONE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "INSTAGRAM CLONE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF796502CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSTAGRAM_CLONEApp.swift; sourceTree = "<group>"; };
 		9FF796522CEC6F0B0041EC78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +153,8 @@
 				9F271E442CF669F400DDF022 /* ProfileHeaderView.swift */,
 				9F271E482CF6E3DF00DDF022 /* SettingLabelView.swift */,
 				9F271E4A2CF6E8D700DDF022 /* SettingRowView.swift */,
+				9F92272C2CFDB0FC00DA2F80 /* SignInWithAppleButtonCustom.swift */,
+				9F9227302CFEE44F00DA2F80 /* LikeAnimationView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -160,6 +172,9 @@
 				9F271E462CF6E17B00DDF022 /* SettingView.swift */,
 				9F271E4C2CF6F43900DDF022 /* SettingEditTextView.swift */,
 				9F9227242CF8388C00DA2F80 /* SettingEditImageView.swift */,
+				9F9227262CFD8E1200DA2F80 /* SignUpView.swift */,
+				9F9227282CFDAC3E00DA2F80 /* OnboardingView.swift */,
+				9F92272E2CFE06B000DA2F80 /* OnboardingScreenPart2.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -248,10 +263,13 @@
 				9FF796532CEC6F0B0041EC78 /* ContentView.swift in Sources */,
 				9F271E472CF6E17B00DDF022 /* SettingView.swift in Sources */,
 				9F271E4B2CF6E8D700DDF022 /* SettingRowView.swift in Sources */,
+				9F9227272CFD8E1200DA2F80 /* SignUpView.swift in Sources */,
+				9F9227312CFEE44F00DA2F80 /* LikeAnimationView.swift in Sources */,
 				9F271E492CF6E3DF00DDF022 /* SettingLabelView.swift in Sources */,
 				9F271E4D2CF6F43900DDF022 /* SettingEditTextView.swift in Sources */,
 				9F9227252CF8388C00DA2F80 /* SettingEditImageView.swift in Sources */,
 				9FF796712CEDBFEE0041EC78 /* CommentView.swift in Sources */,
+				9F92272F2CFE06B000DA2F80 /* OnboardingScreenPart2.swift in Sources */,
 				9F271E452CF669F400DDF022 /* ProfileHeaderView.swift in Sources */,
 				9FF796732CEDC3DE0041EC78 /* MessageView.swift in Sources */,
 				9FF7966C2CEC81CC0041EC78 /* PostModel.swift in Sources */,
@@ -260,9 +278,11 @@
 				9F271E432CF667D300DDF022 /* ProfileView.swift in Sources */,
 				9FF796652CEC79E00041EC78 /* FeedView.swift in Sources */,
 				9FF796772CEE2C810041EC78 /* BrowseView.swift in Sources */,
+				9F92272D2CFDB0FC00DA2F80 /* SignInWithAppleButtonCustom.swift in Sources */,
 				9FF796752CEDC5F90041EC78 /* CommentModel.swift in Sources */,
 				9FF7967D2CEE957E0041EC78 /* UploadView.swift in Sources */,
 				9FF7967F2CEE98F80041EC78 /* ImagePicker.swift in Sources */,
+				9F9227292CFDAC3E00DA2F80 /* OnboardingView.swift in Sources */,
 				9FF796672CEC7B4A0041EC78 /* PostView.swift in Sources */,
 				9FF796512CEC6F0B0041EC78 /* INSTAGRAM_CLONEApp.swift in Sources */,
 			);
